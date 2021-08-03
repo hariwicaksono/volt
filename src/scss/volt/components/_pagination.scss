@@ -1,0 +1,70 @@
+/**
+ * = Paginations
+ */
+ .circle-pagination{
+    .page-link,
+    span{
+        @include display-flex();
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        @include border-radius($circle-radius);
+    }
+}
+
+.dataTable-pagination-list {
+    @include display-flex();
+    padding-left: 0;
+    list-style: none
+}
+
+.dataTable-pagination-list li>a {
+    position: relative;
+    display: block;
+    color: $gray-800;
+    background-color: $white;
+    border: .0625rem solid $gray-400;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .dataTable-pagination-list li>a {
+        transition: none
+    }
+}
+
+.dataTable-pagination-list li>a:hover {
+    z-index: 2;
+    color: #000;
+    background-color: $gray-200;
+    border-color: $gray-300
+}
+
+.dataTable-pagination-list li>a:focus {
+    z-index: 3;
+    color: #000;
+    background-color: $gray-200;
+    outline: 0;
+    box-shadow: 0 0 0 .18rem rgba(31, 41, 55, .25)
+}
+
+.dataTable-pagination-list li:not(:first-child) a {
+    margin-left: -.0625rem
+}
+
+.dataTable-pagination-list li.active a {
+    z-index: 3;
+    color: $white;
+    background-color: $gray-800;
+    border-color: $gray-800
+}
+
+.dataTable-pagination-list li.disabled a {
+    color: $gray-600;
+    pointer-events: none;
+    background-color: $white;
+    border-color: $gray-300
+}
+
