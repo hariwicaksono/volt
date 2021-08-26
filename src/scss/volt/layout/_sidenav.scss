@@ -26,7 +26,7 @@
 		&.active {
 			& > .nav-link {
 				color: $gray-100;
-				background-color: $teal;
+				background-color: $secondary;
 			}
 		}
 		.nav-link {
@@ -108,13 +108,13 @@
 			width: 50px;
 			&.active {
 				& > .nav-link {
-					background-color: $teal;
+					background-color: $blue;
 					width: 50px;
 				}
 			}
 			.nav-link {
 				&:hover {
-					background-color: $blue;
+					background-color: $secondary;
 				}
 			}
 		}

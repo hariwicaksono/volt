@@ -43,8 +43,8 @@ $brown      : #b9a084 !default;
 $yellow     : #f4a100 !default;
 $yellow-100 : #ffeed6 !default;
 $yellow-200 : #f5dbb8 !default;
-$green      : #00ac69 !default;
-$teal       : #1E90FF !default;
+$green      : #198754 !default;
+$teal       : #20c997 !default;
 $cyan       : #00cfd5 !default;
 $soft-indigo: #f5e8ff !default;
 $soft-green : #2CA58D !default;
@@ -148,7 +148,8 @@ $theme-colors: (
     "gray-600": $gray-600,
     "gray-700": $gray-700,
     "gray-800": $gray-800,
-    "gray-900": $gray-900
+    "gray-900": $gray-900,
+    "dark": $dark,
     ) !default;
 
     // Navbar colors
