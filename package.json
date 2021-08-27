@@ -1,7 +1,7 @@
 {
     "name": "@themesberg/volt-bootstrap-5-dashboard",
     "version": "1.4.1",
-    "description": "Loop - Bootstrap 5 Dashboard",
+    "description": "Volt Free - Bootstrap 5 Dashboard",
     "main": "gulpfile.js",
     "author": "Themesberg",
     "keywords": [
